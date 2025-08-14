@@ -1,0 +1,36 @@
+{
+  "name": "mobile-webview-testing-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:allure": "npx wdio run wdio.conf.js && npm run allure:report",
+    "allure:report": "npx allure generate allure-results --clean && npx allure open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akan-baba/mobile-webview-testing-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/akan-baba/mobile-webview-testing-framework/issues"
+  },
+  "homepage": "https://github.com/akan-baba/mobile-webview-testing-framework#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@testing-library/webdriverio": "^3.2.1",
+    "@wdio/allure-reporter": "^9.19.0",
+    "@wdio/appium-service": "^9.19.0",
+    "@wdio/cli": "^9.19.0",
+    "@wdio/local-runner": "^9.19.0",
+    "@wdio/mocha-framework": "^9.19.0",
+    "@wdio/spec-reporter": "^9.19.0",
+    "allure-commandline": "^2.34.1",
+    "appium": "^2.19.0",
+    "appium-uiautomator2-driver": "^4.2.8",
+    "wdio-wait-for": "^3.1.0"
+  }
+}
